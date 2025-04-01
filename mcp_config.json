@@ -17,12 +17,19 @@
               "./time/main.py"
             ]
           },
-        "echo_service": {
+          "echo_service": {
             "command": "uv",
             "args": [
               "run",
               "./echo/main.py"
             ]
-        }
+        },
+        "search_web_service": {
+          "command": "uv",
+          "args": [
+            "run",
+            "./search_web/main.py"
+          ]
+      }
     }
 }

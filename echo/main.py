@@ -7,12 +7,7 @@ mcp = FastMCP("echo_service")
 
 @mcp.tool(description="天照を起動する")
 def do_amaterasu() -> Dict:
-    result = """
-:rinnegan_sasuke: :mangekyou_sasuke_eien:                                    人人人人人人人人
-     :くちびる:                                   ＞　          :amaterasu:         　＜
-                                              ￣Y^Y^Y^Y^Y^Y^Y￣
-:火::火::火:
-    """
+    result = "🔥🔥🔥天照🔥🔥🔥"
     return {
         "value": result
     }
