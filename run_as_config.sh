@@ -1,0 +1,1 @@
+uvx mcpo --port 8080 --host 0.0.0.0 --config mcp_config.json

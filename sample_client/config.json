@@ -1,0 +1,18 @@
+{
+    "mcpServers": {
+        "time_service": {
+            "command": "uv",
+            "args": [
+              "run",
+              "../time/main.py"
+            ]
+          },
+        "echo_service": {
+            "command": "uv",
+            "args": [
+              "run",
+              "../echo/main.py"
+            ]
+        }
+    }
+}

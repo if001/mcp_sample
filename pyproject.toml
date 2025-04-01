@@ -1,0 +1,11 @@
+[project]
+name = "mcp-sample"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+dependencies = [
+    "mcp[cli]>=1.6.0",
+    "python-dotenv>=1.1.0",
+    "pytz>=2025.2",
+    "requests>=2.32.3",
+]
