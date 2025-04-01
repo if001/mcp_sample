@@ -1,7 +1,5 @@
 """
 run: uv run client.py
-
-現在時刻を教えて下さい
 """
 
 import subprocess
@@ -224,7 +222,7 @@ class LLMClient:
         data = json.dumps({"messages":messages, "model": "gemma3:1b", "stream": False})
         response = requests.post(url, data=data, headers=headers)
         result = json.loads(response.text)
-        print('response: ', result)
+        # print('response: ', result)
         return result['message']['content']
 
 
@@ -290,7 +288,7 @@ class ChatSession:
                 return f"No server found with tool: {tool_call['tool']}"
             return llm_response
         except json.JSONDecodeError:
-            print('error!!!')
+            print('JSONDecode fail...')
             return llm_response
 
     async def start(self) -> None:
